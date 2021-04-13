@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="styles/UI/stylesheet.css" rel="stylesheet" type="text/css" />
+	<title>Qulix / homework #6</title>
+</head>
+
+<body>
+	<div class="app">
+		<header class="header">
+			<div class="container">
+				<div class="header__row">
+					<div class="header__wrapper">
+						<div class="header__col">
+							<a href="index.html" title="logo" class="header__logo">
+								<img class="desktop" src="images/header/logo.png" alt="logo">
+								<img class= "mobile" src="images/header/logo-mobile.png" alt="logo">
+							</a>
+						</div>
+
+						<div class="header__col">
+							<div class="header__settings">
+								<div class="header__settings__item">
+									<div class="location-filter">
+										<span>New York</span>
+										<svg width="18" height="18" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M53 23C53 21.343 51.657 20 50 20C49.191 20 48.458 20.321 47.918 20.841L47.917 20.84L31.993 36.764L16.275 21.046C15.725 20.406 14.91 20 14 20C12.343 20 11 21.343 11 23C11 23.805 11.318 24.536 11.835 25.075L11.827 25.083L29.827 43.083L29.828 43.082C30.374 43.648 31.139 44 31.987 44C31.989 44 31.991 44 31.994 44C31.996 44 31.998 44 32.001 44C32.85 44 33.613 43.648 34.16 43.082L34.161 43.083L52.161 25.083L52.16 25.082C52.68 24.543 53 23.809 53 23Z" fill="#737A8A"/>
+										</svg>
+									</div>
+								</div>
+
+								<div class="header__settings__item">
+									<svg width="18" height="18" viewBox="0 0 46 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M43 40C41.343 40 40 38.657 40 37V17C40 9.268 33.732 3 26 3C26 1.343 24.657 0 23 0C21.343 0 20 1.343 20 3C12.268 3 6 9.268 6 17V37C6 38.657 4.657 40 3 40C1.343 40 0 41.343 0 43C0 44.657 1.343 46 3 46H43C44.657 46 46 44.657 46 43C46 41.343 44.657 40 43 40ZM23 55C26.314 55 29 52.314 29 49H17C17 52.314 19.686 55 23 55Z" fill="#737A8A"/>
+									</svg>
+								</div>
+
+								<div class="header__settings__item">
+									<a href="mailto:qulix@gmail.com" title="mail us" target="_blank">
+										<svg width="18" height="18" viewBox="0 0 64 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M63.002 0.78C62.471 0.3 61.773 0 61 0H3C2.227 0 1.53 0.3 0.998 0.78L32 25L63.002 0.78ZM0.894 0.866C0.343 1.41 0 2.165 0 3V41C0 41.789 0.311 42.501 0.809 43.037L20.378 19.741L0.894 0.866ZM32 31L23.864 23.119L0.943 43.175C1.481 43.684 2.202 44 3 44H61C61.798 44 62.52 43.684 63.057 43.175L40.137 23.119L32 31ZM63.105 0.866L43.622 19.741L63.191 43.037C63.689 42.502 64 41.789 64 41V3C64 2.165 63.657 1.41 63.105 0.866Z" fill="#737A8A"/>
+										</svg>
+									</a>
+								</div>
+
+								<div class="header__settings__item">
+									<div class="main-user">
+										<span>User name</span>
+										
+										<img src="images/header/main-user.jpg" alt="current user photo">
+									</div>
+								</div>
+
+								<div class="header__settings__item">
+									<svg width="18" height="18" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M62.243 53.758L44.658 36.173C46.768 32.602 48 28.449 48 24C48 10.745 37.255 0 24 0C10.745 0 0 10.745 0 24C0 37.255 10.745 48 24 48C28.449 48 32.602 46.768 36.173 44.658L53.757 62.242C54.843 63.329 56.343 64 58 64C61.314 64 64 61.314 64 58C64 56.343 63.328 54.843 62.243 53.758ZM24 42C14.059 42 6 33.941 6 24C6 14.059 14.059 6 24 6C33.941 6 42 14.059 42 24C42 33.941 33.941 42 24 42Z" fill="#737A8A"/>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="header__row">
+					<div class="header__wrapper">
+						<div class="header__col">
+							<div class="header__burger" id="burger" onclick="toggleModal()">
+								<span></span>
+							</div>
+
+							<div class="header__navigation" id="nav">
+								<a href="#" title="menu item" class="header__navigation__item header__navigation__item-active">Menu item</a>
+								<a href="#" title="menu item" class="header__navigation__item">Menu item</a>
+								<a href="#" title="menu item" class="header__navigation__item">Menu item</a>
+								<a href="#" title="menu item" class="header__navigation__item">Menu item</a>
+								<a href="#" title="menu item" class="header__navigation__item">Menu item</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="container">
+				<div class="main__col">
+					<aside class="aside">
+						<div class="aside__col">
+							<span class="aside__col__title title-mid">Submenu</span>
+							<a href="#" title="submenu item" class="aside__col__item">Submenu item 7d</a>
+							<a href="#" title="submenu item" class="aside__col__item">Submenu item 5d</a>
+						</div>
+
+						<div class="aside__col">
+							<span class="aside__col__title title-mid">Submenu</span>
+							<a href="#" title="submenu item" class="aside__col__item">Submenu item 7d</a>
+							<a href="#" title="submenu item" class="aside__col__item">Submenu item 2d</a>
+							<a href="#" title="submenu item" class="aside__col__item">Submenu item 4d</a>
+							<a href="#" title="submenu item" class="aside__col__item">More tags</a>
+						</div>
+
+						<div class="aside__col">
+							<span class="aside__col__title title-mid">Submenu</span>
+							<a href="#" title="submenu item" class="aside__col__item">Submenu item 1d</a>
+							<a href="#" title="submenu item" class="aside__col__item">Submenu item 1d</a>
+						</div>
+
+						<div class="aside__col">
+							<span class="aside__col__title title-mid">Submenu</span>
+							<a href="#" title="submenu item" class="aside__col__item">Submenu item 4d</a>
+							<a href="#" title="submenu item" class="aside__col__item">Submenu item 2d</a>
+							<a href="#" title="submenu item" class="aside__col__item">Submenu item1 & Submenu2 2d</a>
+							<a href="#" title="submenu item" class="aside__col__item">Submenu item 7d</a>
+							<a href="#" title="submenu item" class="aside__col__item">Submenu item 1d</a>
+							<a href="#" title="submenu item" class="aside__col__item">Submenu item 1d</a>
+						</div>
+
+						<div class="aside__col">
+							<span class="aside__col__title title-mid">Submenu</span>
+							<a href="#" title="submenu item" class="aside__col__item">Submenu item 2d</a>
+							<a href="#" title="submenu item" class="aside__col__item">Submenu item 1d</a>
+							<a href="#" title="submenu item" class="aside__col__item">Submenu item 3d</a>
+						</div>
+					</aside>
+				</div>
+
+				<div class="main__col">
+					<article class="article">
+						<div class="article__row filter">
+							<div class="article__col">
+								<span class="title-large">Page title in</span>
+
+								<div class="location-filter">
+									<span class="title-large">New York</span>
+									<svg width="19.3" height="30" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M53 23C53 21.343 51.657 20 50 20C49.191 20 48.458 20.321 47.918 20.841L47.917 20.84L31.993 36.764L16.275 21.046C15.725 20.406 14.91 20 14 20C12.343 20 11 21.343 11 23C11 23.805 11.318 24.536 11.835 25.075L11.827 25.083L29.827 43.083L29.828 43.082C30.374 43.648 31.139 44 31.987 44C31.989 44 31.991 44 31.994 44C31.996 44 31.998 44 32.001 44C32.85 44 33.613 43.648 34.16 43.082L34.161 43.083L52.161 25.083L52.16 25.082C52.68 24.543 53 23.809 53 23Z" fill="black"/>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						<div class="article__row search">
+							<div class="article__col">
+								<form action="#" class="search-form">
+									<input type="text" id="text1" placeholder="Search ..."/>
+								</form>
+							</div>
+
+							<div class="article__col">
+								<div class="filter-settings">
+									<svg width="10" height="10" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M52 29H35V12C35 10.343 33.657 9 32 9C30.343 9 29 10.343 29 12V29H12C10.343 29 9 30.343 9 32C9 33.657 10.343 35 12 35H29V52C29 53.657 30.343 55 32 55C33.657 55 35 53.657 35 52V35H52C53.657 35 55 33.657 55 32C55 30.343 53.657 29 52 29Z" fill="#9AA2B5"/>
+									</svg>
+									
+									<span>New item</span>
+								</div>
+
+								<div class="filter-settings">
+									<svg width="15.4" height="18" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M3.53943 0.973112C3.14196 1.24609 2.9858 1.73456 2.98107 2.68997V3.39396H1.49054H0V5.22575V7.05755H1.49054H2.98107V7.75435C2.9858 8.75286 3.13249 9.19105 3.55836 9.46402C3.70978 9.55741 4.04574 9.57178 5.85331 9.57178C7.81704 9.57178 7.98738 9.55741 8.16246 9.43529C8.39432 9.27007 8.57886 8.96836 8.65457 8.6451C8.68297 8.50862 8.70662 8.09916 8.70662 7.7328V7.05755H19.3533H30V5.22575V3.39396H19.358H8.71609L8.69716 2.58222C8.68297 1.66991 8.61672 1.42567 8.29022 1.08805L8.11987 0.915644L5.8959 0.901277C4.23502 0.894093 3.63407 0.90846 3.53943 0.973112Z" fill="#9AA2B5"/>
+										<path d="M22.0836 11.7339C21.989 11.8129 21.8517 12.0069 21.776 12.1721C21.6577 12.445 21.6483 12.5384 21.6293 13.2855L21.6151 14.0973H10.8076H0V15.8931V17.689H10.8076H21.6151L21.6293 18.5007C21.6483 19.2478 21.6577 19.3412 21.7808 19.6142C21.8517 19.7794 21.9937 19.9806 22.0978 20.0596C22.2823 20.2032 22.3486 20.2032 24.5489 20.1889L26.8155 20.1673L26.9905 19.959C27.2697 19.6429 27.3502 19.2981 27.3502 18.4217V17.689H28.6751H30V15.8931V14.0973H28.6751H27.3502V13.3574C27.3502 12.4881 27.2697 12.1433 26.9905 11.8273L26.8155 11.6189L24.5394 11.6046C22.3438 11.5902 22.2587 11.5902 22.0836 11.7339Z" fill="#9AA2B5"/>
+										<path d="M7.05521 22.3727C6.92271 22.4733 6.79968 22.6385 6.71451 22.854C6.58675 23.1557 6.57729 23.2204 6.57729 23.9531V24.7289H3.28864H0V26.5607V28.3925H3.28864H6.57729V29.1468C6.57729 30.0519 6.65773 30.3608 6.9653 30.6697L7.16404 30.8708L9.31704 30.8924C11.612 30.9139 11.7114 30.9068 11.9716 30.5763C12.2129 30.2674 12.2697 30.016 12.2934 29.1612L12.317 28.3925H21.1562H30V26.5607V24.7289H21.1514H12.3028V24.1327C12.3028 23.1342 12.142 22.617 11.7634 22.3512C11.5836 22.2291 11.418 22.2147 9.4164 22.2147C7.30126 22.2147 7.25868 22.2147 7.05521 22.3727Z" fill="#9AA2B5"/>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						<div class="article__row profile">
+							<div class="article__col">
+								<div class="article__item">
+									<div class="article__item__col">
+										<div class="article__item__profile">
+											<img class="profile__photo" src="images/main/user-1.jpg" alt="user photo">
+										</div>
+									</div>
+
+									<div class="article__item__col">
+										<div class="article__item__profile">
+											<div class="profile__details">
+												<div class="profile__details__col">
+													<span>User name</span>
+													<span>Pro</span>
+												</div>
+
+												<div class="profile__details__col">
+													<div class="profile__details__comments">
+														<svg width="12" height="12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<g clip-path="url(#clip0)">
+															<path d="M46.568 34.581C46.568 34.586 46.568 34.591 46.568 34.596C45.267 34.796 43.939 35.126 42.584 35.074C30.548 34.324 22.711 26.862 22.205 17.952C22.137 15.862 22.512 13.845 23.25 11.966C9.78696 14.332 -0.0400391 23.094 -0.0400391 33.57C-0.0400391 40.532 4.13696 46.747 11.083 50.828C12.656 51.752 12.835 58.689 3.98596 62.878C3.98596 62.878 16.515 64.854 24.459 54.811C26.423 55.093 28.455 55.694 30.534 55.694C45.091 55.694 54.771 48.532 57.31 38.798C54.779 38.739 50.392 38.061 46.92 34.49L46.568 34.581ZM56.721 27.814C61.27 25.141 64.006 21.07 64.006 16.51C64.006 8.45803 55.156 1.93103 43.979 1.93103C32.8 1.93103 25.986 8.45803 25.986 16.51C25.986 24.562 32.799 31.002 43.979 31.002C45.34 31.002 46.671 30.608 47.958 30.423C53.162 37.001 61.369 35.707 61.369 35.707C55.573 32.964 55.689 28.419 56.721 27.814Z" fill="#9AA2B5"/>
+															</g>
+															<defs>
+															<clipPath id="clip0">
+															<rect width="64" height="64" fill="white"/>
+															</clipPath>
+															</defs>
+														</svg>
+
+														<span>2</span>
+													</div>
+
+													<div class="profile__details__timer">
+														<svg width="10.3" height="12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M45 29H35V14C35 12.343 33.657 11 32 11C30.343 11 29 12.343 29 14V32C29 33.657 30.343 35 32 35H45C46.657 35 48 33.657 48 32C48 30.343 46.657 29 45 29ZM32 0C14.327 0 0 14.327 0 32C0 49.673 14.327 64 32 64C49.673 64 64 49.673 64 32C64 14.327 49.673 0 32 0ZM32 58C17.641 58 6 46.359 6 32C6 17.641 17.641 6 32 6C46.359 6 58 17.64 58 32C58 46.359 46.359 58 32 58Z" fill="#9AA2B5"/>
+														</svg>
+
+														<span>20m</span>
+													</div>
+												</div>
+											</div>
+
+											<span class="profile__title title-small">Item title 1</span>
+
+											<p class="profile__text">
+												Suspendisse potenti. Duis imperdiet ex&nbsp;non leo condimentum efficitur. Sed rhoncus eleifend lacus sit amet faucibus. 
+												Nunc semper nisl a&nbsp;dolor pretium dapibus quis lacus. Nulla faucibus viverra laoreet. Fusce in&nbsp;scelerisque magna. 
+												Duis porta erat vitae lectus lacinia tempus.
+											</p>
+
+											<div class="profile__tags">
+												<svg width="10" height="12" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M49 26C49 25.982 48.998 25.967 48.997 25.951C48.996 25.864 48.993 25.777 48.984 25.693C48.982 25.676 48.978 25.662 48.976 25.646C48.966 25.562 48.955 25.477 48.937 25.394C48.937 25.392 48.937 25.391 48.937 25.389C48.814 24.795 48.515 24.266 48.097 23.858L25.126 1.88404C24.582 1.33804 23.831 1.00004 23 1.00004C22.997 1.00004 22.995 1.00104 22.992 1.00104V0.993042H4.00004V1.00004C2.34304 1.00004 1.00004 2.34304 1.00004 4.00004H0.993042V23.049H1.00604C1.02104 23.927 1.41504 24.706 2.02904 25.245L2.01804 25.257L27.018 48.257L27.024 48.252C27.419 48.6 27.903 48.844 28.442 48.945C28.463 48.95 28.487 48.953 28.509 48.956C28.576 48.967 28.643 48.978 28.711 48.984C28.807 48.995 28.902 49 29 49C29.916 49 30.734 48.589 31.284 47.941L31.285 47.943L48.285 27.943L48.284 27.941C48.73 27.418 49 26.741 49 26ZM9.00004 13C6.79104 13 5.00004 11.209 5.00004 9.00004C5.00004 6.79104 6.79104 5.00004 9.00004 5.00004C11.209 5.00004 13 6.79104 13 9.00004C13 11.209 11.209 13 9.00004 13Z" fill="#9AA2B5"/>
+												</svg>
+												<span>tag1,</span>
+												<span>tag2,</span>
+												<span>tag3</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="article__col">
+								<div class="article__item">
+									<div class="article__item__col">
+										<div class="article__item__profile">
+											<img class="profile__photo" src="images/main/user-2.jpg" alt="user photo">
+										</div>
+									</div>
+
+									<div class="article__item__col">
+										<div class="article__item__profile">
+											<div class="profile__details">
+												<div class="profile__details__col">
+													<span>User name</span>
+													<span>Member</span>
+												</div>
+
+												<div class="profile__details__col">
+													<div class="profile__details__comments">
+														<svg width="12" height="12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<g clip-path="url(#clip0)">
+															<path d="M46.568 34.581C46.568 34.586 46.568 34.591 46.568 34.596C45.267 34.796 43.939 35.126 42.584 35.074C30.548 34.324 22.711 26.862 22.205 17.952C22.137 15.862 22.512 13.845 23.25 11.966C9.78696 14.332 -0.0400391 23.094 -0.0400391 33.57C-0.0400391 40.532 4.13696 46.747 11.083 50.828C12.656 51.752 12.835 58.689 3.98596 62.878C3.98596 62.878 16.515 64.854 24.459 54.811C26.423 55.093 28.455 55.694 30.534 55.694C45.091 55.694 54.771 48.532 57.31 38.798C54.779 38.739 50.392 38.061 46.92 34.49L46.568 34.581ZM56.721 27.814C61.27 25.141 64.006 21.07 64.006 16.51C64.006 8.45803 55.156 1.93103 43.979 1.93103C32.8 1.93103 25.986 8.45803 25.986 16.51C25.986 24.562 32.799 31.002 43.979 31.002C45.34 31.002 46.671 30.608 47.958 30.423C53.162 37.001 61.369 35.707 61.369 35.707C55.573 32.964 55.689 28.419 56.721 27.814Z" fill="#9AA2B5"/>
+															</g>
+															<defs>
+															<clipPath id="clip0">
+															<rect width="64" height="64" fill="white"/>
+															</clipPath>
+															</defs>
+														</svg>
+
+														<span>2</span>
+													</div>
+
+													<div class="profile__details__timer">
+														<svg width="10.3" height="12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M45 29H35V14C35 12.343 33.657 11 32 11C30.343 11 29 12.343 29 14V32C29 33.657 30.343 35 32 35H45C46.657 35 48 33.657 48 32C48 30.343 46.657 29 45 29ZM32 0C14.327 0 0 14.327 0 32C0 49.673 14.327 64 32 64C49.673 64 64 49.673 64 32C64 14.327 49.673 0 32 0ZM32 58C17.641 58 6 46.359 6 32C6 17.641 17.641 6 32 6C46.359 6 58 17.64 58 32C58 46.359 46.359 58 32 58Z" fill="#9AA2B5"/>
+														</svg>
+														
+														<span>20m</span>
+													</div>
+												</div>
+											</div>
+
+											<span class="profile__title title-small">Item title 2</span>
+
+											<p class="profile__text">
+												Suspendisse potenti. Duis imperdiet ex&nbsp;non leo condimentum efficitur. Sed rhoncus eleifend lacus sit amet faucibus. 
+												Nunc semper nisl a&nbsp;dolor pretium dapibus quis lacus. Nulla faucibus viverra laoreet. Fusce in&nbsp;scelerisque magna. 
+												Duis porta erat vitae lectus lacinia tempus.
+											</p>
+
+											<div class="profile__tags">
+												<svg width="10" height="12" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M49 26C49 25.982 48.998 25.967 48.997 25.951C48.996 25.864 48.993 25.777 48.984 25.693C48.982 25.676 48.978 25.662 48.976 25.646C48.966 25.562 48.955 25.477 48.937 25.394C48.937 25.392 48.937 25.391 48.937 25.389C48.814 24.795 48.515 24.266 48.097 23.858L25.126 1.88404C24.582 1.33804 23.831 1.00004 23 1.00004C22.997 1.00004 22.995 1.00104 22.992 1.00104V0.993042H4.00004V1.00004C2.34304 1.00004 1.00004 2.34304 1.00004 4.00004H0.993042V23.049H1.00604C1.02104 23.927 1.41504 24.706 2.02904 25.245L2.01804 25.257L27.018 48.257L27.024 48.252C27.419 48.6 27.903 48.844 28.442 48.945C28.463 48.95 28.487 48.953 28.509 48.956C28.576 48.967 28.643 48.978 28.711 48.984C28.807 48.995 28.902 49 29 49C29.916 49 30.734 48.589 31.284 47.941L31.285 47.943L48.285 27.943L48.284 27.941C48.73 27.418 49 26.741 49 26ZM9.00004 13C6.79104 13 5.00004 11.209 5.00004 9.00004C5.00004 6.79104 6.79104 5.00004 9.00004 5.00004C11.209 5.00004 13 6.79104 13 9.00004C13 11.209 11.209 13 9.00004 13Z" fill="#9AA2B5"/>
+												</svg>
+												<span>tag1,</span>
+												<span>tag2,</span>
+												<span>tag3</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="article__col">
+								<div class="article__item">
+									<div class="article__item__col">
+										<div class="article__item__profile">
+											<img class="profile__photo" src="images/main/user-3.jpg" alt="user photo">
+										</div>
+									</div>
+
+									<div class="article__item__col">
+										<div class="article__item__profile">
+											<div class="profile__details">
+												<div class="profile__details__col">
+													<span>User name</span>
+													<span>Member</span>
+												</div>
+
+												<div class="profile__details__col">
+													<div class="profile__details__comments">
+														<svg width="12" height="12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<g clip-path="url(#clip0)">
+															<path d="M46.568 34.581C46.568 34.586 46.568 34.591 46.568 34.596C45.267 34.796 43.939 35.126 42.584 35.074C30.548 34.324 22.711 26.862 22.205 17.952C22.137 15.862 22.512 13.845 23.25 11.966C9.78696 14.332 -0.0400391 23.094 -0.0400391 33.57C-0.0400391 40.532 4.13696 46.747 11.083 50.828C12.656 51.752 12.835 58.689 3.98596 62.878C3.98596 62.878 16.515 64.854 24.459 54.811C26.423 55.093 28.455 55.694 30.534 55.694C45.091 55.694 54.771 48.532 57.31 38.798C54.779 38.739 50.392 38.061 46.92 34.49L46.568 34.581ZM56.721 27.814C61.27 25.141 64.006 21.07 64.006 16.51C64.006 8.45803 55.156 1.93103 43.979 1.93103C32.8 1.93103 25.986 8.45803 25.986 16.51C25.986 24.562 32.799 31.002 43.979 31.002C45.34 31.002 46.671 30.608 47.958 30.423C53.162 37.001 61.369 35.707 61.369 35.707C55.573 32.964 55.689 28.419 56.721 27.814Z" fill="#9AA2B5"/>
+															</g>
+															<defs>
+															<clipPath id="clip0">
+															<rect width="64" height="64" fill="white"/>
+															</clipPath>
+															</defs>
+														</svg>
+
+														<span>2</span>
+													</div>
+
+													<div class="profile__details__timer">
+														<svg width="10.3" height="12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M45 29H35V14C35 12.343 33.657 11 32 11C30.343 11 29 12.343 29 14V32C29 33.657 30.343 35 32 35H45C46.657 35 48 33.657 48 32C48 30.343 46.657 29 45 29ZM32 0C14.327 0 0 14.327 0 32C0 49.673 14.327 64 32 64C49.673 64 64 49.673 64 32C64 14.327 49.673 0 32 0ZM32 58C17.641 58 6 46.359 6 32C6 17.641 17.641 6 32 6C46.359 6 58 17.64 58 32C58 46.359 46.359 58 32 58Z" fill="#9AA2B5"/>
+														</svg>
+														
+														<span>20m</span>
+													</div>
+												</div>
+											</div>
+
+											<span class="profile__title title-small">Item title 3</span>
+
+											<p class="profile__text">
+												Suspendisse potenti. Duis imperdiet ex&nbsp;non leo condimentum efficitur. Sed rhoncus eleifend lacus sit amet faucibus. 
+												Nunc semper nisl a&nbsp;dolor pretium dapibus quis lacus. Nulla faucibus viverra laoreet. Fusce in&nbsp;scelerisque magna. 
+												Duis porta erat vitae lectus lacinia tempus.
+											</p>
+
+											<div class="profile__tags">
+												<svg width="10" height="12" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M49 26C49 25.982 48.998 25.967 48.997 25.951C48.996 25.864 48.993 25.777 48.984 25.693C48.982 25.676 48.978 25.662 48.976 25.646C48.966 25.562 48.955 25.477 48.937 25.394C48.937 25.392 48.937 25.391 48.937 25.389C48.814 24.795 48.515 24.266 48.097 23.858L25.126 1.88404C24.582 1.33804 23.831 1.00004 23 1.00004C22.997 1.00004 22.995 1.00104 22.992 1.00104V0.993042H4.00004V1.00004C2.34304 1.00004 1.00004 2.34304 1.00004 4.00004H0.993042V23.049H1.00604C1.02104 23.927 1.41504 24.706 2.02904 25.245L2.01804 25.257L27.018 48.257L27.024 48.252C27.419 48.6 27.903 48.844 28.442 48.945C28.463 48.95 28.487 48.953 28.509 48.956C28.576 48.967 28.643 48.978 28.711 48.984C28.807 48.995 28.902 49 29 49C29.916 49 30.734 48.589 31.284 47.941L31.285 47.943L48.285 27.943L48.284 27.941C48.73 27.418 49 26.741 49 26ZM9.00004 13C6.79104 13 5.00004 11.209 5.00004 9.00004C5.00004 6.79104 6.79104 5.00004 9.00004 5.00004C11.209 5.00004 13 6.79104 13 9.00004C13 11.209 11.209 13 9.00004 13Z" fill="#9AA2B5"/>
+												</svg>
+												<span>tag1,</span>
+												<span>tag2,</span>
+												<span>tag3</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="article__col">
+								<div class="article__item">
+									<div class="article__item__col">
+										<div class="article__item__profile">
+											<img class="profile__photo" src="images/main/user-4.jpg" alt="user photo">
+										</div>
+									</div>
+
+									<div class="article__item__col">
+										<div class="article__item__profile">
+											<div class="profile__details">
+												<div class="profile__details__col">
+													<span>User name</span>
+													<span>Member</span>
+												</div>
+
+												<div class="profile__details__col">
+													<div class="profile__details__comments">
+														<svg width="12" height="12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<g clip-path="url(#clip0)">
+															<path d="M46.568 34.581C46.568 34.586 46.568 34.591 46.568 34.596C45.267 34.796 43.939 35.126 42.584 35.074C30.548 34.324 22.711 26.862 22.205 17.952C22.137 15.862 22.512 13.845 23.25 11.966C9.78696 14.332 -0.0400391 23.094 -0.0400391 33.57C-0.0400391 40.532 4.13696 46.747 11.083 50.828C12.656 51.752 12.835 58.689 3.98596 62.878C3.98596 62.878 16.515 64.854 24.459 54.811C26.423 55.093 28.455 55.694 30.534 55.694C45.091 55.694 54.771 48.532 57.31 38.798C54.779 38.739 50.392 38.061 46.92 34.49L46.568 34.581ZM56.721 27.814C61.27 25.141 64.006 21.07 64.006 16.51C64.006 8.45803 55.156 1.93103 43.979 1.93103C32.8 1.93103 25.986 8.45803 25.986 16.51C25.986 24.562 32.799 31.002 43.979 31.002C45.34 31.002 46.671 30.608 47.958 30.423C53.162 37.001 61.369 35.707 61.369 35.707C55.573 32.964 55.689 28.419 56.721 27.814Z" fill="#9AA2B5"/>
+															</g>
+															<defs>
+															<clipPath id="clip0">
+															<rect width="64" height="64" fill="white"/>
+															</clipPath>
+															</defs>
+														</svg>
+
+														<span>2</span>
+													</div>
+
+													<div class="profile__details__timer">
+														<svg width="10.3" height="12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M45 29H35V14C35 12.343 33.657 11 32 11C30.343 11 29 12.343 29 14V32C29 33.657 30.343 35 32 35H45C46.657 35 48 33.657 48 32C48 30.343 46.657 29 45 29ZM32 0C14.327 0 0 14.327 0 32C0 49.673 14.327 64 32 64C49.673 64 64 49.673 64 32C64 14.327 49.673 0 32 0ZM32 58C17.641 58 6 46.359 6 32C6 17.641 17.641 6 32 6C46.359 6 58 17.64 58 32C58 46.359 46.359 58 32 58Z" fill="#9AA2B5"/>
+														</svg>
+														
+														<span>20m</span>
+													</div>
+												</div>
+											</div>
+
+											<span class="profile__title title-small">Item title 4</span>
+
+											<p class="profile__text">
+												Suspendisse potenti. Duis imperdiet ex&nbsp;non leo condimentum efficitur. Sed rhoncus eleifend lacus sit amet faucibus. 
+												Nunc semper nisl a&nbsp;dolor pretium dapibus quis lacus. Nulla faucibus viverra laoreet. Fusce in&nbsp;scelerisque magna. 
+												Duis porta erat vitae lectus lacinia tempus.
+											</p>
+
+											<div class="profile__tags">
+												<svg width="10" height="12" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M49 26C49 25.982 48.998 25.967 48.997 25.951C48.996 25.864 48.993 25.777 48.984 25.693C48.982 25.676 48.978 25.662 48.976 25.646C48.966 25.562 48.955 25.477 48.937 25.394C48.937 25.392 48.937 25.391 48.937 25.389C48.814 24.795 48.515 24.266 48.097 23.858L25.126 1.88404C24.582 1.33804 23.831 1.00004 23 1.00004C22.997 1.00004 22.995 1.00104 22.992 1.00104V0.993042H4.00004V1.00004C2.34304 1.00004 1.00004 2.34304 1.00004 4.00004H0.993042V23.049H1.00604C1.02104 23.927 1.41504 24.706 2.02904 25.245L2.01804 25.257L27.018 48.257L27.024 48.252C27.419 48.6 27.903 48.844 28.442 48.945C28.463 48.95 28.487 48.953 28.509 48.956C28.576 48.967 28.643 48.978 28.711 48.984C28.807 48.995 28.902 49 29 49C29.916 49 30.734 48.589 31.284 47.941L31.285 47.943L48.285 27.943L48.284 27.941C48.73 27.418 49 26.741 49 26ZM9.00004 13C6.79104 13 5.00004 11.209 5.00004 9.00004C5.00004 6.79104 6.79104 5.00004 9.00004 5.00004C11.209 5.00004 13 6.79104 13 9.00004C13 11.209 11.209 13 9.00004 13Z" fill="#9AA2B5"/>
+												</svg>
+												<span>tag1,</span>
+												<span>tag2,</span>
+												<span>tag3</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="article__row slider">
+							<div class="article__col">
+								<button class="slider-button prev" type="button">
+									<a href="#" title="go to previous page">
+										<svg width="12" height="12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M43.16 47.917L27.236 31.994L42.954 16.276C43.594 15.725 44 14.91 44 14C44 12.343 42.657 11 41 11C40.193 11 39.464 11.318 38.925 11.835L38.917 11.827L20.917 29.827L20.918 29.828C20.352 30.374 20 31.139 20 31.987C20 31.989 20 31.991 20 31.994C20 31.996 20 31.998 20 32.001C20 32.85 20.352 33.614 20.918 34.16L20.917 34.161L38.917 52.161L38.918 52.16C39.458 52.68 40.191 53 41 53C42.657 53 44 51.657 44 50C44 49.191 43.68 48.458 43.16 47.917Z" fill="black"/>
+										</svg>
+
+										<span>Previous</span>
+									</a>
+								</button>
+
+								<button class="slider-button next" type="button">
+									<a href="#" title="go to next page">
+										<span>Next</span>
+
+										<svg width="12" height="12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M44 31.994C44 31.992 44 31.989 44 31.987C44 31.139 43.648 30.374 43.082 29.828L43.083 29.827L25.083 11.827L25.075 11.835C24.536 11.318 23.806 11 23 11C21.343 11 20 12.343 20 14C20 14.91 20.406 15.725 21.046 16.275L36.764 31.993L20.84 47.917L20.841 47.918C20.321 48.458 20 49.191 20 50C20 51.657 21.343 53 23 53C23.809 53 24.542 52.68 25.082 52.159L25.083 52.16L43.083 34.16L43.082 34.159C43.648 33.613 44 32.848 44 32C44 31.998 44 31.996 44 31.994Z" fill="black"/>
+										</svg>
+									</a>
+								</button>
+							</div>
+						</div>
+					</article>
+
+					<footer class="footer">
+						<div class="container">
+							<div class="footer__row">
+								<div class="footer__col">
+									<div class="footer__navigation">
+										<a href="#" title="about" class="footer__navigation__item">About</a>
+										<a href="#" title="policies" class="footer__navigation__item">Policies</a>
+										<a href="#" title="site map" class="footer__navigation__item"><span class="nowrap">Site map</span></a>
+										<a href="#" title="help" class="footer__navigation__item">Help</a>
+										<a href="#" title="contact us" class="footer__navigation__item"><span class="nowrap">Contact us</span></a>
+									</div>
+								</div>
+							</div>
+			
+							<div class="footer__row">
+								<div class="footer__col">
+									<a href="index.html" title="logo" class="footer__logo">
+										<img src="images/footer/logo-min-icon.png" alt="logo">
+									</a>
+								</div>
+			
+								<div class="footer__col">
+									<span>© 2015. Qulix Systems. All rights reserved.</span>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<script src="scripts/burger-menu.js"></script>
+</body>
+</html>

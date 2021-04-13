@@ -1,0 +1,125 @@
+.header {
+	font-size: 14px;
+	color: #9aa2b5;
+	width: 100%;
+	display: flex;
+}
+
+.header__wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+}
+.header__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__row {
+	padding: 0 240px;
+}
+.header__row:first-child {
+	background-color: #292d3a;
+}
+.header__row:first-child .header__col {
+	margin: 18px 0;
+}
+.header__row:last-child {
+	background-color: #646d82;
+}
+
+.header__settings {
+	display: flex;
+	align-items: center;
+}
+.header__settings__item {
+	padding-left: 20px;
+}
+
+.header__logo img {
+	width: 32px;
+	height: 20px;
+}
+
+.main-user,
+.location-filter {
+	display: flex;
+	align-items: center;
+}
+.main-user img {
+	width: 30px;
+	height: 30px;
+	margin-left: 10px;
+	border-radius: 5px;
+}
+
+/* Navigation */
+.header__navigation {
+	padding: 12px 0;
+}
+.header__navigation__item {
+	margin-right: 26px;
+	padding: 7px 0 12px 0;
+	border-top: 5px solid transparent;
+	transition: 0.3s;
+}
+.header__navigation__item-active {
+	border-top: 5px solid #fff;
+}
+.header__navigation a {
+	color: #fff;
+}
+.header__navigation a:hover {
+	border-top-color: #fff;
+	transition: 0.3s;
+}
+
+/* Navigation - mobile version */
+.header__burger {
+	display: none;
+}
+
+.modal__content {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	max-width: 170px;
+	width: 100%;
+	padding: 20px 30px;
+	background-color: #646d82;
+	box-shadow: 0 4px 16px rgba(41, 45, 58, 0.25);
+	left: 15%;
+	top: 11%;
+	transform: translate(-10%, -500%);
+	opacity: 0;
+	transition: 0.5s ease-out;
+	z-index: 10;
+}
+.modal__content a {
+	color: #fff;
+}
+.modal__content a:hover {
+	border-top-color: #fff;
+	transition: 0.3s;
+}
+
+.is-modal-opened .modal__content {
+	opacity: 1;
+	transform: translate(-10%, -10%);
+}
+.is-modal-opened .header__burger {
+	height: 12px;
+}
+.is-modal-opened .header__burger span {
+	display: none;
+}
+.is-modal-opened .header__burger::before {
+	transform: rotate(45deg);
+	top: 25%;
+	bottom: 25%;
+}
+.is-modal-opened .header__burger::after {
+	transform: rotate(-45deg);
+	top: 25%;
+	bottom: 25%;
+}

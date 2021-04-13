@@ -1,0 +1,19 @@
+/* Normalise CSS */
+@import url('https://necolas.github.io/normalize.css/latest/normalize.css');
+
+
+/* Fonts */
+/* замена для Arial (теперь платный на Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+/* замена для Georgia (теперь платный на Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap'); 
+
+
+/* Base */
+@import url('../layout/base.css');
+
+
+/* Components */
+@import url('../components/header.css');
+@import url('../components/main.css');
+@import url('../components/media-queries.css');

@@ -1,0 +1,260 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+	color: black;
+	font-size: 14px;
+	width: 100%;
+	padding: 0 240px;
+}
+
+.main .container {
+	flex-direction: row;
+	background-color: #fff;
+	box-shadow: 0 3px 10px #e0e2e6;
+	max-width: 960px;
+}
+
+.main__col:first-child {
+	width: 20%;
+	border-right: 1px solid #e0e4ed;
+}
+.main__col:last-child {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* Aside */
+.aside {
+	padding-top: 20px;
+}
+.aside,
+.aside__col {
+	display: flex;
+	flex-direction: column;
+}
+.aside__col {
+	margin-bottom: 32px;
+}
+.aside__col__title,
+.aside__col__item {
+	padding: 9px 28px 9px 23px;
+	border-left: 5px solid transparent;
+	transition: 0.3s;
+}
+.aside__col a {
+	text-decoration: none;
+	color: #99a1b3;
+}
+.aside__col a:hover {
+	color: #000;
+	border-left-color: #646d82;
+	transition: 0.3s;
+}
+
+
+/* Article */
+.article {
+	padding: 30px 0;
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+}
+
+.article__row {
+	padding: 0 30px;
+	margin-top: 20px;
+	display: flex;
+}
+
+.article__col {
+	display: flex;
+}
+.article__col .location-filter span.title-large {
+	margin-left: 28px;
+}
+
+.filter-settings {
+	display: flex;
+	align-items: center;
+}
+.filter-settings span {
+	padding-left: 5px;
+	color: #99a1b3;
+}
+.filter-settings:first-child {
+	margin-right: 86px;
+}
+.filter-settings:last-child {
+	margin-right: 30px;
+}
+
+/* article / search form */
+form {
+	padding: 5px 0;
+}
+
+input {
+	padding: 10px 0 10px 10px;
+	width: 20em;
+	border: 1px solid #e0e4ed;
+	border-radius: 5px;
+	background: #fff url('../../images/main/icons/search-icon.svg') 95% 50% no-repeat;
+	background-size: 25px 25px;
+	outline: 0;
+}
+
+.article__row.search {
+	background-color: #f2f4f8;
+}
+.article__row.search .article__col:first-child {
+	width: 50%;
+}
+.article__row.search .article__col:last-child {
+	width: 50%;
+	justify-content: flex-end;
+}
+
+/* article / article items */
+.article__row.profile {
+	display: flex;
+	flex-direction: column;
+}
+.article__row.profile .article__col {
+	margin-bottom: 30px;
+}
+.article__row.slider {
+	display: flex;
+	justify-content: center;
+	margin-top: 0;
+}
+
+.article__item {
+	display: flex;
+	transition: 0.3s;
+}
+.article__item:hover {
+	transform: scale(1.05);
+	transition: 0.3s;
+}
+.article__item__col:first-child {
+	margin-right: 20px;
+}
+
+.profile__details {
+	display: flex;
+	justify-content: space-between;
+	color: #99a1b3;
+	padding-bottom: 5px;
+}
+.profile__details__col {
+	display: flex;
+	align-items: center;
+}
+.profile__details__col span:first-child {
+	margin-right: 26px;
+}
+.profile__details__col:first-child span:last-child {
+	background-color: #f2f4f8;
+	border-radius: 5px;
+	padding: 5px 15px;
+}
+.profile__details__comments {
+	margin-right: 10px;
+}
+.profile__details__timer {
+	margin-right: 28px;
+}
+
+.profile__text {
+	padding: 5px 0 14px 0;
+}
+
+.profile__tags {
+	color: #99a1b3;
+}
+
+/* article / buttons */
+button {
+	background-color: #fff;
+	border: 1px solid #99a1b3;
+	border-radius: 5px;
+	outline: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.3s;
+}
+
+button:hover {
+	background-color: #4f9cd4;
+}
+button:hover span {
+	color: #fff;
+}
+button:hover svg path{
+	fill: #fff;
+}
+button a {
+	color: #000;
+}
+button:hover a {
+	transform: scale(1.07);
+	transition: 0.3s;
+}
+button:hover a svg {
+	transform: rotate(turn);
+	transition: 0.3s;
+}
+
+.slider-button {
+	padding: 10px 18px;
+}
+.slider-button.prev {
+	margin-right: 12px;
+}
+.slider-button.prev span {
+	padding-left: 12px;
+}
+.slider-button.next span {
+	padding-right: 12px;
+}
+
+
+/* Footer */
+.footer {
+	font-size: 12px;
+	color: #99a1b3;
+	width: 100%;
+	display: flex;
+}
+
+.footer .container {
+	flex-direction: column;
+	background-color: #f2f4f8;
+}
+
+.footer__row {
+	padding: 14px 0 14px 0;
+	display: flex;
+}
+.footer__row:first-child {
+	border-bottom: 1px solid #fff;
+}
+
+.footer__navigation,
+.footer__logo {
+	margin-left: 30px;
+}
+.footer__navigation a {
+	color: #99a1b3;
+}
+.footer__navigation__item {
+	margin-right: 26px;
+}
+
+.footer__logo {
+	margin-right: 10px;
+}
