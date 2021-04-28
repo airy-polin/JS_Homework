@@ -12,9 +12,13 @@
 function Animal(name) {
 	var self = this;
 
+	var foodAmount = 50;
+
 	self.name = name;
 
-	self._foodAmount = 50;
+	function formatFoodAmount() {
+		return foodAmount + ' гр.';
+	};
 
 	self.dailyNorm = function(value) {
 		var minAllowedValue = 50,
@@ -28,12 +32,8 @@ function Animal(name) {
 			return ('Количество корма должно быть в пределах заданной нормы!');
 		};
 
-		self._foodAmount = value;
+		foodAmount = value;
 	}
-
-	function formatFoodAmount() {
-		return self._foodAmount + ' гр.';
-	};
 	
 	self.feed = function() {
 		console.log('Насыпаем в миску ' + self.dailyNorm() + ' корма.');
@@ -43,11 +43,11 @@ function Animal(name) {
 function Cat(name) {
 	Animal.apply(this, arguments);
 
-	var animalFeed = this.feed; // =parentFeed
-	this.feed = function() {
-		animalFeed();
-		console.log('Кот доволен ^_^');
-	};
+	// var animalFeed = this.feed; // =parentFeed
+	// this.feed = function() {
+	// 	animalFeed();
+	// 	console.log('Кот доволен ^_^');
+	// };
 }
 
 var bublik = new Cat('Bublik');
@@ -81,9 +81,13 @@ console.log(bublik.feed());
 function Animal(name) {
 	var self = this;
 
+	var foodAmount = 50;
+
 	self.name = name;
 
-	self._foodAmount = 50;
+	function formatFoodAmount() {
+		return foodAmount + ' гр.';
+	};
 
 	self.dailyNorm = function(value) {
 		var minAllowedValue = 50,
@@ -97,12 +101,8 @@ function Animal(name) {
 			return ('Количество корма должно быть в пределах заданной нормы!');
 		};
 
-		self._foodAmount = value;
+		foodAmount = value;
 	}
-
-	function formatFoodAmount() {
-		return self._foodAmount + ' гр.';
-	};
 	
 	self.feed = function() {
 		console.log('Насыпаем в миску ' + self.dailyNorm() + ' корма.');
