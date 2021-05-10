@@ -1,0 +1,25 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin: 30px auto;
+	width: 100%;
+	max-width: 690px;
+}
+
+td {
+	border: 1px solid black;
+	padding: 12px 25px;
+	width: calc(100%/3);
+	height: 25px;
+}
+
+tr:last-child td {
+	font-weight: 700;
+	font-size: 22px;
+	text-align: center;
+	padding: 11px;
+}
