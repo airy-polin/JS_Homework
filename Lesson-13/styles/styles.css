@@ -1,5 +1,6 @@
 body {
 	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
 }
 
 table {
@@ -14,7 +15,11 @@ td {
 	border: 1px solid black;
 	padding: 12px 25px;
 	width: calc(100%/3);
+	max-width: 150px;
 	height: 25px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 tr:last-child td {

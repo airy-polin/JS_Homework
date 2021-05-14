@@ -7,7 +7,8 @@ function addTableRow() {
 	var table = document.getElementsByClassName('table')[0],
 		tableStart = table.getElementsByClassName('table-row')[0],
 		newTableRow = document.createElement('tr');
-
+		
+	newTableRow.classList.add('table-row');
 	newTableRow.innerHTML = '<td><td><td>';
 	table.insertBefore(newTableRow, tableStart);
 }
@@ -39,20 +40,16 @@ function showInput(event) {
 }
 
 function onCellInputBlur(event) {
-	deleteInput(event.target);
+	var input = event.target;
+	input.parentElement.innerText = input.value; // = truncateText(input.value, 20);
 }
 
 function onCellInputKeyPress(event) {
 	if (event.code === 'Enter') {
-		deleteInput(event.target)
+		event.target.blur();
 	}
 }
 
-function deleteInput(input) {
-	input.parentElement.innerText = truncateText(input.value, 20);
-	input.remove();
-}
-
-function truncateText(text, maxLenght) {
-	return (text.length > maxLenght) ? (text.slice(0, maxLenght - 1) + '…') : text;
-}
+// function truncateText(text, maxLenght) {
+// 	return (text.length > maxLenght) ? (text.slice(0, maxLenght - 1) + '…') : text;
+// }
