@@ -1,0 +1,45 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	padding: 10px;
+}
+
+
+/* FORM */
+label {
+	font-weight: 700;
+	width: 30px;
+}
+
+input {
+	width: 180px;
+}
+
+.form__input {
+	display: flex;
+	margin: 10px;
+}
+
+.form__button {
+	margin-left: 40px;
+}
+
+
+/* CHESSBOARD */
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin: 20px 0 0 40px;
+}
+
+td {
+	width: 30px;
+	height: 30px;
+}
+
+.black {
+	background-color: black;
+}
