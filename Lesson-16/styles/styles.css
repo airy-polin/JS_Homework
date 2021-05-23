@@ -1,0 +1,88 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	padding: 15px;
+	background-color: #000;
+}
+
+
+/* NAVIGATION */
+.navigation {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* tabs */
+.navigation__tabs {
+	display: flex;
+}
+
+.tab__item {
+	padding: 10px 25px;
+	margin-right: 10px;
+	font-weight: 700;
+	background-color: #00ff5c;
+	color: #fff;
+	border-radius: 10px 10px 0 0;
+}
+
+/* button */
+.navigation__button {
+	align-self: flex-start;
+}
+
+button {
+	font-weight: 700;
+	background-color: #00ff5c;
+	padding: 8px 20px;
+}
+
+
+/* PROFILES */
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 30px;
+	display: flex;
+}
+
+.profiles {
+	width: 100%;
+}
+.profile__item {
+	display: flex;
+	padding: 25px;
+	background-color: #fff;
+	border-radius: 0 10px 10px;
+}
+
+.item__photo img {
+	width: 150px;
+	height: 150px;
+}
+.item__metrics {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 30px;
+	font-style: italic;
+}
+
+
+/* UI */
+.active {
+	background-color: #fff;
+	color: #000;
+}
+
+.hidden {
+	display: none;
+}
+
+.error {
+	color: red;
+}
