@@ -17,7 +17,8 @@ var eMailRegExp = new RegExp('^[a-z]{3,10}_[a-z]{3,10}(-\d{4})?@[a-z\d]{1,10}[.-
 
 
 // SOLUTION*
-var eMailRegExp = new RegExp('^[a-z]{3,10}_[a-z]{3,10}(-\d{4})?@(?=[a-z\d]+[.-]?[a-z\d]+\.com$)[a-z\d.-]{1,24}', 'i');
+// var eMailRegExp = new RegExp('^[a-z]{3,10}_[a-z]{3,10}(-\d{4})?@(?=[a-z\d]+[.-]?[a-z\d]+\.com$)[a-z\d.-]{1,24}', 'i'); // prev
+var eMailRegExp = new RegExp('^[a-z]{3,10}_[a-z]{3,10}(-\d{4})?@(?=[a-z\d]+[.-]?[a-z\d]+)[a-z\d.-]{2,20}(?<![.-])\.com$', 'i'); // upd
 
 // attempts*
 // ^[a-z]{3,10}_[a-z]{3,10}(-\d{4})?@[a-z\d]{2,20}\.com$
@@ -64,7 +65,7 @@ var a = '+375-25-777-77-77',
 	c = '8-044-444-44-44',
 	d = '8033-6666666';
 
-var phoneNumRegExp = /^(\+?375[-]?|8[-]?0)(25|29|33|44|17)[-]?([1-9]{1}\d{2})[-]?\d{2}[-]?\d{2}$/;
+var phoneNumRegExp = /^(\+?375-?|8-?0)(25|29|33|44|17)-?([1-9]\d{2})(-?\d{2}){2}$/;
 
 function validate(pattern, phoneNum) {
 	return new RegExp(pattern).test(phoneNum);
