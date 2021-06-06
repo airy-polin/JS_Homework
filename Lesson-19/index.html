@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>homework #15 / stopwatch</title>
+	<link href="styles/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="controls-default">
+			<input class="button" type="button" id="btn-start-stop-run" value="Start" tabindex="1" />
+		</div>
+
+		<div class="stopwatch" data-state="initial">
+			<div class="stopwatch__item minutes">00</div>
+			<div class="stopwatch__item seconds">00</div>
+			<div class="stopwatch__item milliseconds">00</div>
+		</div>
+
+		<div class="controls-additional"></div>
+
+		<div class="marks"></div>
+	</div>
+
+	<script src="scripts/main.js"></script>
+</body>
+</html>
